@@ -76,7 +76,7 @@ const Single = (props: Props) => {
         {props.activities && (
           <ul>
             {props.activities.map((activity) => (
-              <li>
+              <li key={activity.text}>
                 <div>
                   <p>{activity.text}</p>
                   <time>{activity.time}</time>
